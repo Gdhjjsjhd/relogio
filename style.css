@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    background-image: url(depositphotos_648874252-stock-illustration-illustration-dinosaur-jungle-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.relogio{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align-last: center;
+    border: 5px solid white;
+}
+
+p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.hora, .minuto, .segundo{
+    position: absolute;
+    background-color: white;
+    bottom: 50%;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+.hora{
+    width: 10px;
+    height: 35%;
+    z-index: 1;
+}
+
+.minuto{
+    width: 8px;
+    height: 35%;
+    z-index: 2;
+    border: 0.1 solid whitesmoke;
+}
+
+.segundo{
+    width: 4px;
+    height: 45%;
+    z-index: 3;
+    background-color: tomato;
+}
+
+.relogi::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    z-index: 4;
+    background-color:black;
+    border-radius: 50%;
+}
